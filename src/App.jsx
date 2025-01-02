@@ -1,18 +1,20 @@
-import "./App.scss";
-import ColorBox from "./components/ColorBox";
-import ToDoList from "./components/ToDoList";
-import PostList from "./components/PostList";
-import Lock from "./components/Lock";
 import { useState } from "react";
+import "./App.scss";
+import Lock from "./components/Lock";
+import MagicBox from "./components/MagicBox";
 function App() {
-  const [showLock, setShowLock] = useState(false);
+  const [showLock, setShowLock] = useState(true);
   return (
     <div className="app">
-      {showLock && <Lock />}
-      <button onClick={() => setShowLock(!showLock)}>Show Lock</button>
-      <ColorBox />
+      <div>
+        {showLock && <Lock />}
+        <button onClick={() => setShowLock(!showLock)}>Show Lock</button>
+      </div>
+
+      {/* <ColorBox />
       <ToDoList />
-      <PostList />
+      <PostList /> */}
+      <MagicBox />
     </div>
   );
 }
