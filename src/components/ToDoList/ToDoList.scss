@@ -1,0 +1,13 @@
+.todo {
+    $box-size: 200px;
+    width: $box-size;
+    color: black;
+    font-size: large;
+    text-align: left;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
